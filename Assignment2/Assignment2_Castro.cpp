@@ -1,4 +1,4 @@
-//*********************************************************************
+//***********************************************************************
 // Author: Raymond Castro
 // Date: 13 Oct 2024
 //
@@ -60,7 +60,7 @@ int main()
                cin.clear(); // Clears the input stream
                cin.ignore(100,'\n'); /* Ignores the invalid input and clears
                the buffer */ 
-               cout << "Invalid input. Please enter a valid price." << endl;
+               cout << "Invalid input. Please enter a valid price." << endl << endl;
                // Outputs a statement to the user to input the price again
           }
           else
