@@ -53,4 +53,8 @@ int main() {
     cout << "Grade: " << grade << endl;
 
     return 0; 
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 56be2b97a9e13e5055fceceaf9dde4df5de534f7
