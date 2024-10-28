@@ -140,12 +140,12 @@ int main()
     {
         cout << "1 for (Yes: 15% discount)" << endl; /* Displays a price
         and options based on loyaltyCardStatus */
-        cout << "2 for No" << endl << endl;
+        cout << "0 for No" << endl << endl;
 
         cout << "Do you have a loyalty card? ";
         cin >> loyaltyCardStatus;
 
-        if ((cin.fail()) || (loyaltyCardStatus < 0) || (loyaltyCardStatus > 2))
+        if ((cin.fail()) || (loyaltyCardStatus < 0) || (loyaltyCardStatus > 1))
         // Checks whether the input for loyaltyCardStatus is valid
         {
             cin.clear();
