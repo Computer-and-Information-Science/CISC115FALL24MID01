@@ -42,7 +42,7 @@ int main()
     }
 
     cout << endl;
-    cout << "The total sum is: " << sum << endl; /* Outputs the total sum
+    cout << "Total sum: " << sum << endl; /* Outputs the total sum
     once the user enters the SENTINEL value to exit the while loop */
 
     return 0; // Terminates the program
