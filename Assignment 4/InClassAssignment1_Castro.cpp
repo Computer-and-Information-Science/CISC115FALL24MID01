@@ -38,7 +38,7 @@ int main()
             SENTINEL value */ 
         }
         
-        sum += number; // Adds the entered number to the sum
+        sum += number; // Adds the user's entered number to the sum
     }
 
     cout << endl;

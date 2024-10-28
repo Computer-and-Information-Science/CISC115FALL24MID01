@@ -54,7 +54,7 @@ int main()
      {
           cout << "Enter the book's price: $";
           cin >> bookPrice;
-          cout << endl;
+          
           if (cin.fail()) // Checks whether the input for bookPrice is valid
           {
                cin.clear(); // Clears the input stream
