@@ -6,7 +6,7 @@ const int SENTINEL = -1; // Declares  the variable SENTINEL as a constant intege
 int main() {
     int number, total_sum = 0; // Declares the variable sum and number in the int data type 
 
-    // Sentinel-controlled while loop
+    // Sentinel-controlled while loop0
     while (true) {
         cout << "Enter a number (-1 to stop): ";
         cin >> number;
@@ -19,6 +19,6 @@ int main() {
 
     cout << "The sum of the entered numbers is: " << total_sum << endl;
 
-    
+
     return 0;
 }
