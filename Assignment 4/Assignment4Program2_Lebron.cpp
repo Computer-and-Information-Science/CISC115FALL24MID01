@@ -1,4 +1,3 @@
-// Assignment4_Lastname2.cpp
 #include <iostream>
 using namespace std;
 
