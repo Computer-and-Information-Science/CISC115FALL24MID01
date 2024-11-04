@@ -15,7 +15,7 @@ int main()
             cout << " ";
         }
         //Prints numbers with a single space between each
-        for (int h = 1; h <= i; h++) {
+        for (int k = 1; k <= i; k++) {
             cout << i << " ";
         }
         cout << endl;
