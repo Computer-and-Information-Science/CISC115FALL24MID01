@@ -4,7 +4,7 @@ using namespace std;
 int main() 
 {
     int rows;
-    cout << "Enter the number of rows for the pyramid: ";
+    cout << 5;
     cin >> rows;
 
     for (int i = 1; i <= rows; i++) 
