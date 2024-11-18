@@ -50,7 +50,7 @@ int main()
         age is valid */
         {
             cin.clear(); // Clears the input stream
-            cin.ignore(100,'\n'); /* Ignores the invalid input and clears
+            cin.ignore(100, '\n'); /* Ignores the invalid input and clears
             the buffer */
             cout << "Invalid input. Please enter a valid age." << endl << endl;
             // Outputs a statement to the user to input their age again
