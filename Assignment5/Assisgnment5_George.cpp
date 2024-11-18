@@ -4,7 +4,7 @@ using namespace std;
 #include <iomanip>
 #include <cmath>
 static int count = 0;
-
+//prototyping my functions
 void BasicCalculator();
 void greetUser(string name, string title);
 double fahrenheitToCelsius(double fahrenheit);
@@ -37,14 +37,14 @@ return area;
 }
 
 int main(){
-
+//declaring variables 
 double Num1;
 double Num2;
 string stringInput;
 string title;
 int userInput;
 int control = 0;
-
+//creating my loop
 while (control == 0){
 
 cout<< "What kind of Opperation would you like?" << '\n';
@@ -57,7 +57,7 @@ cout << "6: Greet User" <<'\n';
 cout << "7: Exit" << '\n';
 cout<< "Please Enter your choice: " ;
 cin >> userInput;
-
+//switch statement for selections
 switch(userInput){
         case 1:{
         BasicCalculator();
@@ -93,6 +93,7 @@ switch(userInput){
         break;
         }
         case 4:{
+        //calling increment function a desired amount of times 
         cout << "How many times would you like to call this function: ";
         cin >> Num1;
         for (int x = 0; x < Num1; ++x){
@@ -147,6 +148,7 @@ switch(userInput){
         break;
         }
         case 7:{
+        //program ending lines
         control = 1;
         cout << "Thank you for using this program, Ending program";
         break;
@@ -157,6 +159,8 @@ switch(userInput){
 
 }
 }
+
+//all prototyped functions bodies 
 
 void greetUser(string name, string title = "Mr./Ms."){
 
