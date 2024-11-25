@@ -59,7 +59,9 @@ void theater_booking::handleUserInput() {
 
         cout << "\nWould you like to book another ticket? (y/n): ";             // ask the user if they want to continue using the system
         cin >> continueBooking;
-        validateUserAccount();                                                  // ask the user to login again to ensure the same or new user will make a new booking
+
+        if (continueBooking == 'y' || continueBooking == 'Y')
+            validateUserAccount();                                              // ask the user to login again to ensure the same or new user will make a new booking
     }
     while (continueBooking == 'y' || continueBooking == 'Y');   // exit program
 
