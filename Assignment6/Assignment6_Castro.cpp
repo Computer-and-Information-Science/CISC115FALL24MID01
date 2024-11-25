@@ -12,7 +12,8 @@
 // Header files
 #include <iostream>
 #include <string>
-#include <algorithm> // Header file used for algorithms
+#include <algorithm> /* Header file used for algorithms, such as remove_if
+and isspace */
 
 namespace theater_booking
 // Defines the namespace theater_booking
