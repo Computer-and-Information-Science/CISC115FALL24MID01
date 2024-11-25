@@ -69,18 +69,21 @@ if(movieGenre == "Action"){
            TicketType userTicket = REGULAR; 
            ticketPrice = calculateTicketPrice(userTicket); 
            ticketType = "Regular";
+           break;
 
         }
         case 2:{
            TicketType userTicket = VIP; 
            ticketPrice = calculateTicketPrice(userTicket); 
            ticketType = "VIP";
+           break;
 
         }
         case 3:{
            TicketType userTicket = STUDENT; 
            ticketPrice = calculateTicketPrice(userTicket); 
            ticketType = "Student";
+           break;
         }
     }
 
@@ -95,6 +98,7 @@ if(movieGenre == "Action"){
             //looping main function if chosen
             if(userInput == "Y" || userInput == "y"){
                 control = 0;
+                numInput = 0;
             }
             if(userInput == "N" || userInput == "n"){
                 control = 1;
@@ -109,6 +113,7 @@ if(movieGenre == "Action"){
 
 else{
     cout << "Your username and password don't match, Ending program.";
+    control = 1;
 }
 
 
