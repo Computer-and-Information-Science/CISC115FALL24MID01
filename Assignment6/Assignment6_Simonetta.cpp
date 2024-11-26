@@ -46,9 +46,9 @@ int main()
     cin >> userName;
     cin >> password;
 
-    if (userName == "EvanI" && password == "Gabriel") 
+    if (userName == "EvanI" && password == "Simonetta") 
     {
-        cout << "Welcome Mr. Gabriel." <<endl;
+        cout << "Welcome Mr. Simonetta." <<endl;
     }
     else 
     {
