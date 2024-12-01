@@ -2,7 +2,7 @@
 // Author: Raymond Castro
 // Date: 24 Nov 2024
 //
-// Computer Science Coding Assignment 6 - Raymond Castro
+// Computer Science I Coding Assignment 6 - Raymond Castro
 //
 // This C++ program acts as a simple ticket booking system for a
 // theater, using enumeration types, 'typedef' statements, namespaces,
