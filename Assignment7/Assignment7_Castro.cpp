@@ -23,9 +23,9 @@ using namespace std;
 string trim(const string& str) /* Creates a function which trims leading
 and trailing spaces from a string */
 {
-    size_t start = str.find_first_not_of(" t\n\r"); /* Searches for the
+    size_t start = str.find_first_not_of(" \t\n\r"); /* Searches for the
     first character in a string that are not whitespace characters */
-    size_t end = str.find_last_not_of (" t\n\r"); /* Searches for the
+    size_t end = str.find_last_not_of (" \t\n\r"); /* Searches for the
     last character in a string that are not whitespace characters */
     return (start == string::npos || end == string::npos) ? "" : str.substr(start, end - start + 1);
     /* Returns an empty string if start or end are equal to string::npos,
@@ -46,7 +46,6 @@ bool searchName(const string names[], int size, const string& target)
     transform(lowerTarget.begin(), lowerTarget.end(), lowerTarget.begin(), ::tolower);
     /* Converts all characters in lowerTarget to lowercase to avoid discrepancies
     during string comparisons */
-
 
     for (int i = 0; i < size; ++i)
     {
@@ -151,6 +150,13 @@ int main()
         whitespaces, then stores it in names[i] */
         names[i] = trim(names[i]); /* Uses the user-defined trim function to trim leading
         and trailing spaces from names[i] */
+        while (names[i].empty()) /* Checks whether names[i] is empty, prompting the user to
+        input names[i] again if it is */
+        {
+            cout << "Name cannot be empty. Please enter a valid name: ";
+            getline(cin, names[i]);
+            names[i] = trim(names[i]);
+        }
     }
 
     sortNames(names, n); /* Uses the user-defined sortNames function to sort the array
