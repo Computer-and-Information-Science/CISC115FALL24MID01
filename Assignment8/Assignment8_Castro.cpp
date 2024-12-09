@@ -203,7 +203,7 @@ public:
         if (index == -1) /* Checks for whether an account number inputted by the
         user exists */
         {
-            cout << "Account not found." << endl;
+            cout << "ERROR!" << endl << "Error: Account not found." << endl;
             return; // Exits the function early
         }
 
